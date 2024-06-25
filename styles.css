@@ -91,6 +91,7 @@ body {
     color: var(--color-dark);
     background-color: var(--color-light);
     margin: 0;
+    /* overflow-x: hidden; */
 }
 a{
     color: var(--color-white);
@@ -156,15 +157,15 @@ h1, h2, h3 {
 
  .welcome_container{
    display: flex;
-   justify-content: space-between;
-   column-gap: 120px;
+   justify-content: space-between; 
+   column-gap: 120px; 
    margin-bottom: 70px;
-   margin-left: 130px;
-   margin-right: 130px;
+   /* margin-left: 130px; */
+   /* margin-right: 130px; */
  }
 
  .welcome_text {
-    width: 416px;
+     width: 416px; 
  }
 
  .btn {
@@ -215,6 +216,7 @@ h1, h2, h3 {
  .welcome_picture_1{
     width: 644.28px;
     height: 378.13px;
+    margin-left: 0;
  }
 
  /* Partners */
@@ -445,13 +447,6 @@ h1, h2, h3 {
    }
  }
 
- @media (max-width: 1290px){
-   .welcome_picture {
-      display: flex;
-     align-items: center;
- }
- }
-
  @media (max-width: 1200px){
    .welcome_container {
       flex-direction: column;
@@ -469,9 +464,8 @@ h1, h2, h3 {
    }
 
    .welcome_picture_1 {
-      max-width: 644.28px;
-      max-height: 378.13px;
-      
+      max-width: 444.28px;
+      max-height: 178.13px;
    }
 
    .container_section_3{
@@ -494,20 +488,36 @@ h1, h2, h3 {
    }
  }
 
- @media (max-width: 640px){
-   .welcome_picture_1 {
-      max-width: 544.28px;
-      max-height: 278.13px;
+@media (max-width: 540px){
+   .header-logo-image{
+      max-width: 45px;
+      max-height: 31.06px;
    }
 
-   .picture_section_3 {
+   .header_text{
+      font-size: 30px;
+   }
+
+   .header{
+      padding: 17px 20px;
+   }
+}
+
+ @media (max-width: 550px){
+    .welcome_picture_1 {
+      max-width: 444.28px;
+      max-height: 178.13px;
+   } 
+}
+ @media (max-width: 640px){
+     .picture_section_3 {
       max-width: 500px;
       max-height: 331.43px;
    }
 
    .picture_section_4{
-      max-width: 500px;
-      max-height: 466px;
+      max-width: 385px;
+      max-height: 365.87px;
    }
  }
 
@@ -516,6 +526,7 @@ h1, h2, h3 {
       flex-direction: column;
       align-items: center;
       gap: 20px;
+      width: 375px;
    }
  }
 
@@ -539,19 +550,6 @@ h1, h2, h3 {
  }
 
  @media (max-width: 500px){
-  
-   .header-logo-image{
-      max-width: 45px;
-      max-height: 31.06px;
-   }
-
-   .header_text{
-      font-size: 30px;
-   }
-
-   .header{
-      padding: 17px 20px;
-   }
 
    .welcome_picture_1 {
       max-width: 335px;
