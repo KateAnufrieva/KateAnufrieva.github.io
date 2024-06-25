@@ -213,8 +213,6 @@ h1, h2, h3 {
  }
 
  .welcome_picture_1{
-    /* margin-left: 120px;
-    display: flex; */
     width: 644.28px;
     height: 378.13px;
  }
@@ -232,12 +230,12 @@ h1, h2, h3 {
 
  .partners_text{
     width: 411px;
-    height: 152px;
     background-color: #F5F5F5;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;    
+    
  }
 
  .partners_subtitle{    
@@ -246,10 +244,12 @@ h1, h2, h3 {
     font-size: 16px;
     letter-spacing: 5px;
     line-height: 1.25;
+    margin: 0;
  }
 
  .partners_title{
-    margin: 0;
+   margin-top: 16px;
+   margin-bottom: 16px;
     font-family: 'CrimsonText-Bold';
     color: #000000;
     font-size: 40px;
@@ -271,7 +271,7 @@ h1, h2, h3 {
  .partners_pictures{
     display: flex;
     column-gap: 68px;
-    margin: 55px 0 55px 0; 
+    margin: 55px 20px 55px 20px; 
     flex-wrap: wrap;
     gap: 40px 68px; 
  }
@@ -303,11 +303,14 @@ h1, h2, h3 {
 
  .welcom_title.section_3{
     color: #212529;
+    margin: 0;
  }
 
  .welcome_desc.section_3{
     color: #212529;
     opacity: 0.5;
+    margin-top: 16px;
+    margin-bottom: 16px;
  }
 
  .container_section_3{
@@ -328,9 +331,12 @@ h1, h2, h3 {
 
  /* Our team */
 
+ .container_partners.our_talents{
+   margin-top: 0px;
+ }
  .partners_pictures.our_team_pictures{
    column-gap: 47px;
-   margin: 45px 0 45px 0;
+   margin: 45px 20px 45px 20px;
    flex-wrap: wrap;
    gap: 35px 47px;
  }
@@ -440,10 +446,6 @@ h1, h2, h3 {
  }
 
  @media (max-width: 1290px){
-   /* .welcome_picture_1 {
-      max-width: 544.28px;
-      max-height: 278.13px;
-   } */
    .welcome_picture {
       display: flex;
      align-items: center;
@@ -486,19 +488,10 @@ h1, h2, h3 {
       order: 2;
    }
 
-   
-
    .container_footer{
       column-gap: 100px;
       width: 700px;
    }
- }
-
- @media (max-width: 680px){
-   /* .welcome_picture_1 {
-      max-width: 335px; 
-      max-height: 196.61px;
-   } */
  }
 
  @media (max-width: 640px){
@@ -537,14 +530,29 @@ h1, h2, h3 {
    }
  }
 
- @media (max-width: 1220px){
-   /* .welcome_picture_1 {
-      max-width: 335px;
-      max-height: 196.61px;
-   } */
+ @media (max-width: 591px){
+   .partners_pictures.our_team_pictures{
+       display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
  }
 
- @media (max-width: 427px){
+ @media (max-width: 500px){
+  
+   .header-logo-image{
+      max-width: 45px;
+      max-height: 31.06px;
+   }
+
+   .header_text{
+      font-size: 30px;
+   }
+
+   .header{
+      padding: 17px 20px;
+   }
+
    .welcome_picture_1 {
       max-width: 335px;
       max-height: 196.61px;
@@ -554,5 +562,70 @@ h1, h2, h3 {
       display: flex;
       flex-direction: column;
       align-items: center;
+   }
+
+   .picture_section_3{
+      max-width: 335px;
+      max-height: 240.88px;
+   }
+
+   .picture_section_4{
+      max-width: 335px;
+      max-height: 315.87px;
+   }
+
+   .welcome_desc{
+      font-size: 15px;
+   }
+
+   .partners_text{
+      width: 335px;
+   }
+
+   .partners_title{
+      text-shadow:none;
+      -webkit-text-stroke:none;
+      text-align: center
+   }
+
+   .welcome_desc.section_3{
+      margin-top: 20px;
+      margin-bottom: 20px;
+   }
+
+   .welcome_desc.section_3.section_4{
+      margin: 16px 0px;
+   }
+
+   .partners_title.our_talents_text{
+      font-size: 24px;
+   }
+
+   .welcome_container{
+      margin-left: 0px;
+      margin-right: 0px;
+   }
+
+   .partners_pictures{
+      margin-left: 20px;
+      margin-right: 20px;
+   }
+
+   .container_section_3{
+      margin-left: 20px;
+      margin-right: 20px;
+   }
+
+   .section_3_text{
+      width: 335px;
+   }
+
+   .welcome_text{
+      width: 335px;
+   }
+
+   .partners_pictures.our_team_pictures{
+      margin-left: 20px;
+      margin-right: 20px;
    }
  }
