@@ -77,6 +77,43 @@
     --font-size-xxl: 30px ;
     --font-size-xxxl: 40px ;
 
+    --gap-xxxxs: 18px;
+    --gap-xxxs: 20px;
+    --gap-xxs: 30px;
+    --gap-xs: 35px;
+    --gap-s: 40px;
+    --gap-m: 47px;
+    --gap-l: 60px;
+    --gap-xl: 68px;
+    --gap-xxl: 80px;
+    --gap-xxxl: 90px;
+    --gap-xxxxl: 100px;
+    --gap-xvl: 120px;
+
+
+    --size-zero: 0px;
+    --size-xxxs: 15px;
+    --size-xxs: 16px;
+    --size-xs: 17px;
+    --size-s: 19px;
+    --size-m: 20px;
+    --size-l: 25px;
+    --size-xl: 35px;
+    --size-xxl: 45px;
+    --size-xxxl: 55px;
+    --size-xxxxl: 60px;
+    --size-xvl: 70px;
+    --size-xvvl: 135px;
+   
+
+    --line-height-standart: 1.25;
+
+    --letter-spacing-zero: 0px;
+    --letter-spacing-5: 5px;
+
+    --opacity-50: 0.5;
+    --opacity-75: 0.75;
+
     --corner-radius: 5px;
 
     --font-family-base: 'WorkSans', 'sans-serif';
@@ -95,10 +132,10 @@ body {
     font-family: var(--font-family-base);
     font-weight: 300;
     font-size: var(--font-size-s);
-    line-height: 1.25;
+    line-height: var(--line-height-standart);
     color: var(--color-dark);
     background-color: var(--color-light);
-    margin: 0;
+    margin: var(--size-zero);
     /* overflow-x: hidden; */
 }
 a{
@@ -113,16 +150,16 @@ ul{
 }
 
 .header-Start{
-    color: #FFFFFF;
+    color: var(--color-white);
     font-family: 'WorkSans-Medium';
     font-size: var(--font-size-xxxl);
     display: flex;
-    column-gap: 18px;    
+    column-gap: var(--column-gap-s);    
 }
 
 h1, h2, h3 {
     font-weight: 700;
-    margin: 0;
+    margin: var(--size-zero);
 }
 
 .header {
@@ -136,7 +173,7 @@ h1, h2, h3 {
 
 .header-menu-list {
     display: flex;
-    column-gap: 30px;    
+    column-gap: var(--gap-xxs);    
 }
 
 .header-menu-link {
@@ -144,7 +181,7 @@ h1, h2, h3 {
     text-decoration: none;
     font-weight: 700;
     font-size: var(--font-size-l);
-    letter-spacing: 0px;
+    letter-spacing: var(--letter-spacing-zero);
 }
 
 .header_container_burger_menu{
@@ -166,8 +203,8 @@ h1, h2, h3 {
  .welcome_container{
    display: flex;
    justify-content: space-between; 
-   column-gap: 120px; 
-   margin-bottom: 70px;
+   column-gap: var(--gap-xvl); 
+   margin-bottom: var(--size-xvl);
    /* margin-left: 130px; */
    /* margin-right: 130px; */
  }
@@ -184,54 +221,54 @@ h1, h2, h3 {
     font-family: 'WorkSans-Regular';
     color: var(--color-black);
     font-size: var(--font-size-l);
-    letter-spacing: 0px;
+    letter-spacing: var(--letter-spacing-zero);
 
     width: 170px;
     height: 48px;
 
     background-color: var(--color-white);
-    border-radius: 5px;
+    border-radius: var(--corner-radius);
  }
 
  .welcome_subtitle{
-    margin-bottom: 15px;
+    margin-bottom: var(--size-xxxs);
     font-family: 'WorkSans-Bold';
     font-size: var(--font-size-m);
     color: var(--color-white);
-    letter-spacing: 5px;
-    line-height: 125%;
+    letter-spacing: var(--letter-spacing-5);
+    line-height: var(--line-height-standart);
  }
 
  .welcom_title{
-    margin-bottom: 15px;
+    margin-bottom: var(--size-xxxs);
     font-family: 'CrimsonText-Bold';
     font-size: var(--font-size-xxxl);
     color: var(--color-white);
-    letter-spacing: 0px;
-    line-height: 125%;
+    letter-spacing: var(--letter-spacing-zero);
+    line-height: var(--line-height-standart);
  }
 
  .welcome_desc{
-    margin-bottom: 25px;
+    margin-bottom: var(--size-l);
     font-family: 'WorkSans-Regular';
     font-size: var(--font-size-s);
     color: var(--color-white);
-    letter-spacing: 0px;
-    line-height: 125%;
-    opacity: 0.75; 
+    letter-spacing: var(--letter-spacing-zero);
+    line-height: var(--line-height-standart);
+    opacity: var(--opacity-75); 
  }
 
  .welcome_picture_1{
     width: 644.28px;
     height: 378.13px;
-    margin-left: 0;
+    margin-left: var(--size-zero);
  }
 
  /* Partners */
 
  .container_partners{
-   margin-top: 60px;
-   margin-bottom: 60px;
+    margin-top: var(--size-xxxxl);
+    margin-bottom: var(--size-xxxxl);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -252,19 +289,19 @@ h1, h2, h3 {
     font-family: 'WorkSans-Bold';
     color: var(--color-green);
     font-size: var(--font-size-m);
-    letter-spacing: 5px;
-    line-height: 1.25;
-    margin: 0;
+    letter-spacing: var(--letter-spacing-5);
+    line-height: var(--line-height-standart);
+    margin: var(--size-zero);
  }
 
  .partners_title{
-   margin-top: 16px;
-   margin-bottom: 16px;
+    margin-top: var(--size-xxs);
+    margin-bottom: var(--size-xxs);
     font-family: 'CrimsonText-Bold';
     color: var(--color-black);
-    font-size: 40px;
-    letter-spacing: 0px;
-    line-height: 1.25;
+    font-size: var(--font-size-xxxl);
+    letter-spacing: var(--letter-spacing-zero);
+    line-height: var(--line-height-standart);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     -webkit-text-stroke: 1px var(--color-black);
  }
@@ -273,14 +310,14 @@ h1, h2, h3 {
     font-family: 'WorkSans-Regular';
     color: var(--color-black);
     font-size: var(--font-size-l);
-    letter-spacing: 0px;
-    line-height: 1.25;
+    letter-spacing: var(--letter-spacing-zero);
+    line-height: var(--line-height-standart);
     text-align: center;
  }
 
  .partners_pictures{
     display: flex;
-    column-gap: 68px;
+    column-gap: var(--gap-xl);
     margin: 55px 20px 55px 20px; 
     flex-wrap: wrap;
     gap: 40px 68px; 
@@ -292,15 +329,15 @@ h1, h2, h3 {
     justify-content: center;
 
     font-family: 'WorkSans-Regular';
-    color: #FFFFFF;
-    font-size: 20px;
-    letter-spacing: 0px;
+    color: var(--color-white);
+    font-size: var(--font-size-l);
+    letter-spacing: var(--letter-spacing-zero);
 
     width: 170px;
     height: 48px;
 
-    background-color: #212529;
-    border-radius: 5px;
+    background-color: var(--color-dark);
+    border-radius: var(--corner-radius);
  }
 
  /* Section 3 */
@@ -312,15 +349,15 @@ h1, h2, h3 {
  }
 
  .welcom_title.section_3{
-    color: #212529;
-    margin: 0;
+    color: var(--color-dark);
+    margin: var(--size-zero);
  }
 
  .welcome_desc.section_3{
-    color: #212529;
-    opacity: 0.5;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    color: var(--color-dark);
+    opacity: var(--opacity-50);
+    margin-top: var(--size-xxs);
+    margin-bottom: var(--size-xxs);
  }
 
  .container_section_3{
@@ -354,8 +391,8 @@ h1, h2, h3 {
  .container_card{
    width: 252px;
    height: 299px;
-   background-color: #FFFFFF;
-   border-radius: 5px;
+   background-color: var(--color-white);
+   border-radius: var(--corner-radius);
    box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.25);
    display: flex;
    justify-content: center;
@@ -380,10 +417,10 @@ h1, h2, h3 {
 
  .title_team{
    font-family: 'CrimsonText-Bold';
-   color: #212529;
-   font-size: 24px;
+   color: var(--color-dark);
+   font-size: var(--font-size-xl);
    letter-spacing: 0px;
-   line-height: 1.25;
+   line-height: var(--line-height-standart);
  }
  
  .picture_card{
@@ -394,10 +431,10 @@ h1, h2, h3 {
  .description_team{
    margin-top: 17px;
    font-family: 'DMSans-Regular';
-   font-size: 14px;
+   font-size: var(--font-size-xs);
    letter-spacing: 0px;
-   color: #212529;
-   opacity: 0.5;
+   color: var(--color-dark);
+   opacity: var(--opacity-50);
  }
 
  /* Footer */
@@ -426,7 +463,7 @@ h1, h2, h3 {
  .footer_info{
    font-family: 'WorkSans-Regular';
    color: var(--color-white);
-   font-size: 16px;
+   font-size: var(--font-size-m);
    letter-spacing: 0px;
  }
 
@@ -503,7 +540,7 @@ h1, h2, h3 {
    }
 
    .header_text{
-      font-size: 30px;
+      font-size: var(--font-size-xxl);
    }
 
    .header{
@@ -581,7 +618,7 @@ h1, h2, h3 {
    }
 
    .welcome_desc{
-      font-size: 15px;
+      font-size: var(--font-size-s);
    }
 
    .partners_text{
@@ -604,7 +641,7 @@ h1, h2, h3 {
    }
 
    .partners_title.our_talents_text{
-      font-size: 24px;
+      font-size: var(--font-size-xl);
    }
 
    .welcome_container{
