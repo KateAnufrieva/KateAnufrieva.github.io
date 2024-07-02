@@ -149,6 +149,27 @@ ul{
     list-style: none;
 }
 
+#checkbox_toggle{
+   display: none;
+}
+
+.hamburger{
+   display: none;
+   cursor: pointer;
+}
+
+.burger{
+   display: none;
+}
+
+.header{
+   background-color: var(--color-green);
+   display: flex;
+   align-items: center; 
+   justify-content: center;
+   
+}
+
 .header-Start{
     color: var(--color-white);
     font-family: 'WorkSans-Medium';
@@ -162,7 +183,8 @@ h1, h2, h3 {
     margin: var(--size-zero);
 }
 
-.header {
+.header-Start_container {
+   width: 1175px;
     background-color: var(--color-green);
     padding: 35px 135px;
     color: var(--color-white);
@@ -429,10 +451,10 @@ h1, h2, h3 {
  }
 
  .description_team{
-   margin-top: 17px;
+   margin-top: var( --size-xs);
    font-family: 'DMSans-Regular';
    font-size: var(--font-size-xs);
-   letter-spacing: 0px;
+   letter-spacing: var(--letter-spacing-zero);
    color: var(--color-dark);
    opacity: var(--opacity-50);
  }
@@ -457,38 +479,38 @@ h1, h2, h3 {
 
  .container_icons{
    display: flex;
-   column-gap: 20px;
+   column-gap: var(--size-m);
  }
 
  .footer_info{
    font-family: 'WorkSans-Regular';
    color: var(--color-white);
    font-size: var(--font-size-m);
-   letter-spacing: 0px;
+   letter-spacing: var(--letter-spacing-zero);
  }
 
  /* адаптив */
 
  @media (max-width: 1410px){
    .welcome_container {
-      column-gap: 100px;
+      column-gap: var(--gap-xxxxl);
    }
  }
 
  @media (max-width: 1350px){
    .welcome_container {
-      column-gap: 90px;
+      column-gap: var(--gap-xxxl);
    }
  }
 
  @media (max-width: 1330px){
    .welcome_container {
-      column-gap: 80px;
+      column-gap: var(--gap-xxl);
    }
  }
  @media (max-width: 1310px){
    .welcome_container {
-      column-gap: 60px;
+      column-gap: var(--gap-l);
    }
  }
 
@@ -516,7 +538,7 @@ h1, h2, h3 {
    .container_section_3{
       flex-direction: column;
       align-items: center;
-      gap: 30px;
+      gap: var(--gap-xxs);
    }
 
    .section_3_picture{
@@ -528,7 +550,7 @@ h1, h2, h3 {
    }
 
    .container_footer{
-      column-gap: 100px;
+      column-gap: var(--gap-xxxxl);
       width: 700px;
    }
  }
@@ -543,7 +565,7 @@ h1, h2, h3 {
       font-size: var(--font-size-xxl);
    }
 
-   .header{
+   .header-Start_container{
       padding: 17px 20px;
    }
 }
@@ -570,20 +592,55 @@ h1, h2, h3 {
    .container_footer {
       flex-direction: column;
       align-items: center;
-      gap: 20px;
+      gap: var(--gap-xxxs);
       width: 375px;
    }
  }
 
  @media (max-width: 900px){
+
+  #checkbox_toggle:checked ~ .header-menu{
+   display: block;
+   min-height: 100%;
+   transition: all .5s;
+  } 
+
+
+  .hamburger{
+   display: block;
+   padding: 20px 0;
+  }
    .header-menu {
-      display: none;
+      /* display: none; */
+      max-height: 0;
+      overflow: hidden;
+      position: absolute;
+      background-color: #212529;
+      text-align: center;
+      right: 0;
+      left: 0;
+      margin-top: 60px;
+      height: 100px;
+      z-index: 1;
+   }
+
+    .header-menu li a{
+      display: block;
+      padding: 15px;
+   }
+
+   .header-menu li{
+      transition: all .5s;
+   }
+
+   .header-menu-list{
+      display: block;
    }
 
    .header_container_burger_menu{
       display: flex;
       align-items: center;
-   }
+   } 
  }
 
  @media (max-width: 591px){
@@ -632,8 +689,8 @@ h1, h2, h3 {
    }
 
    .welcome_desc.section_3{
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin-top: var(--size-m);
+      margin-bottom: var(--size-m);
    }
 
    .welcome_desc.section_3.section_4{
@@ -650,13 +707,13 @@ h1, h2, h3 {
    }
 
    .partners_pictures{
-      margin-left: 20px;
-      margin-right: 20px;
+      margin-left: var(--size-m);
+      margin-right: var(--size-m);
    }
 
    .container_section_3{
-      margin-left: 20px;
-      margin-right: 20px;
+      margin-left: var(--size-m);
+      margin-right: var(--size-m);
    }
 
    .section_3_text{
@@ -668,7 +725,7 @@ h1, h2, h3 {
    }
 
    .partners_pictures.our_team_pictures{
-      margin-left: 20px;
-      margin-right: 20px;
+      margin-left: var(--size-m);
+      margin-right: var(--size-m);
    }
  }
