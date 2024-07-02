@@ -656,21 +656,21 @@ h1, h2, h3 {
 
 }
 
-@media (max-width: 1091px){
+@media (max-width: 1130px){
    .partners_pictures{
       gap: 55px 75px;
       margin: 55px 200px; 
    }
 }
 
-@media (max-width: 1076px){
+ @media (max-width: 1076px){
    .partners_pictures{
-      margin: 55px 310px;  
+      margin: 55px 400px;  
    }
  
-}
+} 
 
-@media (max-width: 1060px){
+@media (max-width: 1080px){
    .partners_pictures {
       display: flex;
       flex-direction: column;
