@@ -109,7 +109,8 @@
     --size-xvvl: 135px;
     --size-xvvvl: 200px;
     --size-xvvvvl: 400px;
-    --size-xxvvvl: 285px;
+    --size-xxvvvl: 350px;
+    --size-xxvvvvl: 250px;
    
 
     --line-height-standart: 1.25;
@@ -513,8 +514,6 @@ h1, h2, h3 {
    }
  }
 
- 
-
  @media (max-width: 1200px){
    .welcome_picture_1{
       width: 544.28px;
@@ -636,21 +635,17 @@ h1, h2, h3 {
    }
  
 }
+
 @media (max-width: 1190px){
    .partners_pictures.our_team_pictures{
-      gap: var(--gap-s) var(--gap-xxxs);
-   }
-}
-
-@media (max-width: 1108px){
-   .partners_pictures.our_team_pictures{
       gap: var(--gap-s) var(--gap-s);
-      margin-left: var(--size-xxvvvl);
+      margin-left: var(--size-xxvvvvl);
+      margin-right: var(--size-xxvvvvl);
    }
 
 }
 
-@media (max-width: 1095px){
+@media (max-width: 768px){
    .partners_pictures.our_team_pictures{
       gap: var(--gap-s) var(--gap-s);
       display: flex;
